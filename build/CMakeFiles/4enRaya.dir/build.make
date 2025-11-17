@@ -86,70 +86,19 @@ CMakeFiles/4enRaya.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/4enRaya.dir/src/main.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\USER\Desktop\ED\src\main.cpp -o CMakeFiles\4enRaya.dir\src\main.cpp.s
 
-CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.obj: CMakeFiles/4enRaya.dir/flags.make
-CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.obj: CMakeFiles/4enRaya.dir/includes_CXX.rsp
-CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.obj: C:/Users/USER/Desktop/ED/src/Datos/Tablero.cpp
-CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.obj: CMakeFiles/4enRaya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\USER\Desktop\ED\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.obj -MF CMakeFiles\4enRaya.dir\src\Datos\Tablero.cpp.obj.d -o CMakeFiles\4enRaya.dir\src\Datos\Tablero.cpp.obj -c C:\Users\USER\Desktop\ED\src\Datos\Tablero.cpp
-
-CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\USER\Desktop\ED\src\Datos\Tablero.cpp > CMakeFiles\4enRaya.dir\src\Datos\Tablero.cpp.i
-
-CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\USER\Desktop\ED\src\Datos\Tablero.cpp -o CMakeFiles\4enRaya.dir\src\Datos\Tablero.cpp.s
-
-CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.obj: CMakeFiles/4enRaya.dir/flags.make
-CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.obj: CMakeFiles/4enRaya.dir/includes_CXX.rsp
-CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.obj: C:/Users/USER/Desktop/ED/src/Datos/Jugador.cpp
-CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.obj: CMakeFiles/4enRaya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\USER\Desktop\ED\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.obj -MF CMakeFiles\4enRaya.dir\src\Datos\Jugador.cpp.obj.d -o CMakeFiles\4enRaya.dir\src\Datos\Jugador.cpp.obj -c C:\Users\USER\Desktop\ED\src\Datos\Jugador.cpp
-
-CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\USER\Desktop\ED\src\Datos\Jugador.cpp > CMakeFiles\4enRaya.dir\src\Datos\Jugador.cpp.i
-
-CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\USER\Desktop\ED\src\Datos\Jugador.cpp -o CMakeFiles\4enRaya.dir\src\Datos\Jugador.cpp.s
-
-CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.obj: CMakeFiles/4enRaya.dir/flags.make
-CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.obj: CMakeFiles/4enRaya.dir/includes_CXX.rsp
-CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.obj: C:/Users/USER/Desktop/ED/src/Negocio/LogicaJuego.cpp
-CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.obj: CMakeFiles/4enRaya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\USER\Desktop\ED\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.obj -MF CMakeFiles\4enRaya.dir\src\Negocio\LogicaJuego.cpp.obj.d -o CMakeFiles\4enRaya.dir\src\Negocio\LogicaJuego.cpp.obj -c C:\Users\USER\Desktop\ED\src\Negocio\LogicaJuego.cpp
-
-CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\USER\Desktop\ED\src\Negocio\LogicaJuego.cpp > CMakeFiles\4enRaya.dir\src\Negocio\LogicaJuego.cpp.i
-
-CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\USER\Desktop\ED\src\Negocio\LogicaJuego.cpp -o CMakeFiles\4enRaya.dir\src\Negocio\LogicaJuego.cpp.s
-
 # Object files for target 4enRaya
 4enRaya_OBJECTS = \
-"CMakeFiles/4enRaya.dir/src/main.cpp.obj" \
-"CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.obj" \
-"CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.obj" \
-"CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.obj"
+"CMakeFiles/4enRaya.dir/src/main.cpp.obj"
 
 # External object files for target 4enRaya
 4enRaya_EXTERNAL_OBJECTS =
 
 C:/Users/USER/Desktop/ED/bin/4enRaya.exe: CMakeFiles/4enRaya.dir/src/main.cpp.obj
-C:/Users/USER/Desktop/ED/bin/4enRaya.exe: CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.obj
-C:/Users/USER/Desktop/ED/bin/4enRaya.exe: CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.obj
-C:/Users/USER/Desktop/ED/bin/4enRaya.exe: CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.obj
 C:/Users/USER/Desktop/ED/bin/4enRaya.exe: CMakeFiles/4enRaya.dir/build.make
 C:/Users/USER/Desktop/ED/bin/4enRaya.exe: CMakeFiles/4enRaya.dir/linkLibs.rsp
 C:/Users/USER/Desktop/ED/bin/4enRaya.exe: CMakeFiles/4enRaya.dir/objects1.rsp
 C:/Users/USER/Desktop/ED/bin/4enRaya.exe: CMakeFiles/4enRaya.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\USER\Desktop\ED\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable C:\Users\USER\Desktop\ED\bin\4enRaya.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\USER\Desktop\ED\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable C:\Users\USER\Desktop\ED\bin\4enRaya.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\4enRaya.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

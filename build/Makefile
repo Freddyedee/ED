@@ -128,78 +128,6 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/build
 .PHONY : 4enRaya/fast
 
-src/Datos/Jugador.obj: src/Datos/Jugador.cpp.obj
-.PHONY : src/Datos/Jugador.obj
-
-# target to build an object file
-src/Datos/Jugador.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.obj
-.PHONY : src/Datos/Jugador.cpp.obj
-
-src/Datos/Jugador.i: src/Datos/Jugador.cpp.i
-.PHONY : src/Datos/Jugador.i
-
-# target to preprocess a source file
-src/Datos/Jugador.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.i
-.PHONY : src/Datos/Jugador.cpp.i
-
-src/Datos/Jugador.s: src/Datos/Jugador.cpp.s
-.PHONY : src/Datos/Jugador.s
-
-# target to generate assembly for a file
-src/Datos/Jugador.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.s
-.PHONY : src/Datos/Jugador.cpp.s
-
-src/Datos/Tablero.obj: src/Datos/Tablero.cpp.obj
-.PHONY : src/Datos/Tablero.obj
-
-# target to build an object file
-src/Datos/Tablero.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.obj
-.PHONY : src/Datos/Tablero.cpp.obj
-
-src/Datos/Tablero.i: src/Datos/Tablero.cpp.i
-.PHONY : src/Datos/Tablero.i
-
-# target to preprocess a source file
-src/Datos/Tablero.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.i
-.PHONY : src/Datos/Tablero.cpp.i
-
-src/Datos/Tablero.s: src/Datos/Tablero.cpp.s
-.PHONY : src/Datos/Tablero.s
-
-# target to generate assembly for a file
-src/Datos/Tablero.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.s
-.PHONY : src/Datos/Tablero.cpp.s
-
-src/Negocio/LogicaJuego.obj: src/Negocio/LogicaJuego.cpp.obj
-.PHONY : src/Negocio/LogicaJuego.obj
-
-# target to build an object file
-src/Negocio/LogicaJuego.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.obj
-.PHONY : src/Negocio/LogicaJuego.cpp.obj
-
-src/Negocio/LogicaJuego.i: src/Negocio/LogicaJuego.cpp.i
-.PHONY : src/Negocio/LogicaJuego.i
-
-# target to preprocess a source file
-src/Negocio/LogicaJuego.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.i
-.PHONY : src/Negocio/LogicaJuego.cpp.i
-
-src/Negocio/LogicaJuego.s: src/Negocio/LogicaJuego.cpp.s
-.PHONY : src/Negocio/LogicaJuego.s
-
-# target to generate assembly for a file
-src/Negocio/LogicaJuego.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.s
-.PHONY : src/Negocio/LogicaJuego.cpp.s
-
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -233,15 +161,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 4enRaya
-	@echo ... src/Datos/Jugador.obj
-	@echo ... src/Datos/Jugador.i
-	@echo ... src/Datos/Jugador.s
-	@echo ... src/Datos/Tablero.obj
-	@echo ... src/Datos/Tablero.i
-	@echo ... src/Datos/Tablero.s
-	@echo ... src/Negocio/LogicaJuego.obj
-	@echo ... src/Negocio/LogicaJuego.i
-	@echo ... src/Negocio/LogicaJuego.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

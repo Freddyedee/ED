@@ -8,9 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/USER/Desktop/ED/src/Datos/Jugador.cpp" "CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.obj" "gcc" "CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.obj.d"
-  "C:/Users/USER/Desktop/ED/src/Datos/Tablero.cpp" "CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.obj" "gcc" "CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.obj.d"
-  "C:/Users/USER/Desktop/ED/src/Negocio/LogicaJuego.cpp" "CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.obj" "gcc" "CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.obj.d"
   "C:/Users/USER/Desktop/ED/src/main.cpp" "CMakeFiles/4enRaya.dir/src/main.cpp.obj" "gcc" "CMakeFiles/4enRaya.dir/src/main.cpp.obj.d"
   )
 
