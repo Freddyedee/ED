@@ -1,0 +1,19 @@
+file(REMOVE_RECURSE
+  "C:/Users/USER/Desktop/ED/bin/4enRaya.exe"
+  "C:/Users/USER/Desktop/ED/bin/4enRaya.exe.manifest"
+  "C:/Users/USER/Desktop/ED/bin/4enRaya.pdb"
+  "CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.obj"
+  "CMakeFiles/4enRaya.dir/src/Datos/Jugador.cpp.obj.d"
+  "CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.obj"
+  "CMakeFiles/4enRaya.dir/src/Datos/Tablero.cpp.obj.d"
+  "CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.obj"
+  "CMakeFiles/4enRaya.dir/src/Negocio/LogicaJuego.cpp.obj.d"
+  "CMakeFiles/4enRaya.dir/src/main.cpp.obj"
+  "CMakeFiles/4enRaya.dir/src/main.cpp.obj.d"
+  "lib4enRaya.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/4enRaya.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
