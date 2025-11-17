@@ -118,7 +118,7 @@ else()
 endif()
 
 # =============================================================================
-# MENSAJE FINAL DE CONFIGURACIÓN
+# MENSAJE FINAL DE CONFIGURACIÓN (modificar)
 # =============================================================================
 
 message(STATUS "✅ Configuración de 4enRaya completada exitosamente!")
