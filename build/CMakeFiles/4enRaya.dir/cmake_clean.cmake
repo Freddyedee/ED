@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "C:/Users/USER/Desktop/ED/bin/4enRaya.exe"
   "C:/Users/USER/Desktop/ED/bin/4enRaya.exe.manifest"
   "C:/Users/USER/Desktop/ED/bin/4enRaya.pdb"
+  "CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.obj"
+  "CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.obj.d"
   "CMakeFiles/4enRaya.dir/src/main.cpp.obj"
   "CMakeFiles/4enRaya.dir/src/main.cpp.obj.d"
   "lib4enRaya.dll.a"

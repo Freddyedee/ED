@@ -128,6 +128,30 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/build
 .PHONY : 4enRaya/fast
 
+src/Negocio/Tablero.obj: src/Negocio/Tablero.cpp.obj
+.PHONY : src/Negocio/Tablero.obj
+
+# target to build an object file
+src/Negocio/Tablero.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.obj
+.PHONY : src/Negocio/Tablero.cpp.obj
+
+src/Negocio/Tablero.i: src/Negocio/Tablero.cpp.i
+.PHONY : src/Negocio/Tablero.i
+
+# target to preprocess a source file
+src/Negocio/Tablero.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.i
+.PHONY : src/Negocio/Tablero.cpp.i
+
+src/Negocio/Tablero.s: src/Negocio/Tablero.cpp.s
+.PHONY : src/Negocio/Tablero.s
+
+# target to generate assembly for a file
+src/Negocio/Tablero.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.s
+.PHONY : src/Negocio/Tablero.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 4enRaya
+	@echo ... src/Negocio/Tablero.obj
+	@echo ... src/Negocio/Tablero.i
+	@echo ... src/Negocio/Tablero.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

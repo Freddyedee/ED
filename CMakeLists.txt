@@ -80,6 +80,7 @@ set(FILES_TO_CHECK
     # MÓDULO: Negocio
     # ========================
     
+    "src/Negocio/Tablero.cpp"
 
     # ========================
     # MÓDULO: Presentación
