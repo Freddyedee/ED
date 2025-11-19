@@ -24,9 +24,8 @@ void Tablero::imprimirTablero() const{
     for (int j = 0; j < columnas; j++)
     {
         cout << " " << j << " ";
-        cout << "\n";
-
     }
+    cout << "\n";
     
 }
 

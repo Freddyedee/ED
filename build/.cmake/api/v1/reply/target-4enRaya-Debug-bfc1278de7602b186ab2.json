@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "C:/Users/USER/Desktop/ED/bin/4enRaya.exe"
+			"path" : "C:/Users/usuario/ED proyet1/ED/bin/4enRaya.exe"
 		},
 		{
-			"path" : "C:/Users/USER/Desktop/ED/bin/4enRaya.pdb"
+			"path" : "C:/Users/usuario/ED proyet1/ED/bin/4enRaya.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -71,7 +71,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/USER/Desktop/ED/include"
+					"path" : "C:/Users/usuario/ED proyet1/ED/include"
 				}
 			],
 			"language" : "CXX",

@@ -79,9 +79,9 @@ set(FILES_TO_CHECK
     # ========================
     # MÓDULO: Negocio
     # ========================
-    
-    "src/Negocio/Tablero.cpp"
 
+    "src/Negocio/Tablero.cpp"
+s
     # ========================
     # MÓDULO: Presentación
     # ========================

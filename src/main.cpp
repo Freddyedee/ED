@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Negocio/Tablero.h"
+#include "../include/Negocio/Tablero.h"
 
 int main() {
     //Opcion 1 de creacion : 
