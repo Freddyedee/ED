@@ -128,6 +128,30 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/build
 .PHONY : 4enRaya/fast
 
+src/Negocio/Jugador.obj: src/Negocio/Jugador.cpp.obj
+.PHONY : src/Negocio/Jugador.obj
+
+# target to build an object file
+src/Negocio/Jugador.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.obj
+.PHONY : src/Negocio/Jugador.cpp.obj
+
+src/Negocio/Jugador.i: src/Negocio/Jugador.cpp.i
+.PHONY : src/Negocio/Jugador.i
+
+# target to preprocess a source file
+src/Negocio/Jugador.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.i
+.PHONY : src/Negocio/Jugador.cpp.i
+
+src/Negocio/Jugador.s: src/Negocio/Jugador.cpp.s
+.PHONY : src/Negocio/Jugador.s
+
+# target to generate assembly for a file
+src/Negocio/Jugador.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.s
+.PHONY : src/Negocio/Jugador.cpp.s
+
 src/Negocio/Tablero.obj: src/Negocio/Tablero.cpp.obj
 .PHONY : src/Negocio/Tablero.obj
 
@@ -185,6 +209,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 4enRaya
+	@echo ... src/Negocio/Jugador.obj
+	@echo ... src/Negocio/Jugador.i
+	@echo ... src/Negocio/Jugador.s
 	@echo ... src/Negocio/Tablero.obj
 	@echo ... src/Negocio/Tablero.i
 	@echo ... src/Negocio/Tablero.s

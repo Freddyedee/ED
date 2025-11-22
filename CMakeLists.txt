@@ -81,6 +81,7 @@ set(FILES_TO_CHECK
     # ========================
 
     "src/Negocio/Tablero.cpp"
+    "src/Negocio/Jugador.cpp"
 s
     # ========================
     # MÓDULO: Presentación

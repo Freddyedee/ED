@@ -10,5 +10,11 @@
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/4enRaya.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -g -O0 -o CMakeFiles\\4enRaya.dir\\src\\Negocio\\Tablero.cpp.obj -c \"C:\\Users\\usuario\\ED proyet1\\ED\\src\\Negocio\\Tablero.cpp\"",
   "file": "C:/Users/usuario/ED proyet1/ED/src/Negocio/Tablero.cpp",
   "output": "CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.obj"
+},
+{
+  "directory": "C:/Users/usuario/ED proyet1/ED/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/4enRaya.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -g -O0 -o CMakeFiles\\4enRaya.dir\\src\\Negocio\\Jugador.cpp.obj -c \"C:\\Users\\usuario\\ED proyet1\\ED\\src\\Negocio\\Jugador.cpp\"",
+  "file": "C:/Users/usuario/ED proyet1/ED/src/Negocio/Jugador.cpp",
+  "output": "CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.obj"
 }
 ]
