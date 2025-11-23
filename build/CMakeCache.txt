@@ -36,7 +36,11 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //No help, variable specified on the command line.
+<<<<<<< HEAD
 CMAKE_CXX_COMPILER:FILEPATH=C:/msys64/ucrt64/bin/g++.exe
+=======
+CMAKE_CXX_COMPILER:FILEPATH=C:/msys64/mingw64/bin/g++.exe
+>>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler

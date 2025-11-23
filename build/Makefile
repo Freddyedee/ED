@@ -152,6 +152,33 @@ src/Negocio/Jugador.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.s
 .PHONY : src/Negocio/Jugador.cpp.s
 
+<<<<<<< HEAD
+=======
+src/Negocio/JugadorHumano.obj: src/Negocio/JugadorHumano.cpp.obj
+.PHONY : src/Negocio/JugadorHumano.obj
+
+# target to build an object file
+src/Negocio/JugadorHumano.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/JugadorHumano.cpp.obj
+.PHONY : src/Negocio/JugadorHumano.cpp.obj
+
+src/Negocio/JugadorHumano.i: src/Negocio/JugadorHumano.cpp.i
+.PHONY : src/Negocio/JugadorHumano.i
+
+# target to preprocess a source file
+src/Negocio/JugadorHumano.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/JugadorHumano.cpp.i
+.PHONY : src/Negocio/JugadorHumano.cpp.i
+
+src/Negocio/JugadorHumano.s: src/Negocio/JugadorHumano.cpp.s
+.PHONY : src/Negocio/JugadorHumano.s
+
+# target to generate assembly for a file
+src/Negocio/JugadorHumano.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/JugadorHumano.cpp.s
+.PHONY : src/Negocio/JugadorHumano.cpp.s
+
+>>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516
 src/Negocio/Tablero.obj: src/Negocio/Tablero.cpp.obj
 .PHONY : src/Negocio/Tablero.obj
 
@@ -212,6 +239,12 @@ help:
 	@echo ... src/Negocio/Jugador.obj
 	@echo ... src/Negocio/Jugador.i
 	@echo ... src/Negocio/Jugador.s
+<<<<<<< HEAD
+=======
+	@echo ... src/Negocio/JugadorHumano.obj
+	@echo ... src/Negocio/JugadorHumano.i
+	@echo ... src/Negocio/JugadorHumano.s
+>>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516
 	@echo ... src/Negocio/Tablero.obj
 	@echo ... src/Negocio/Tablero.i
 	@echo ... src/Negocio/Tablero.s
