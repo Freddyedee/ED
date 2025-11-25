@@ -1,0 +1,28 @@
+# Ignorar carpeta de compilación de CMake
+build/
+out/
+bin/
+lib/
+
+# Archivos generados por CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Archivos de entorno
+*.swp
+*.swo
+
+# Archivos temporales de editores
+*.user
+*.user.*
+*.log
+
+# Archivos temporales de VSCode
+.vscode/
+*.code-workspace
+
+# Archivos de Windows
+Thumbs.db
+Desktop.ini

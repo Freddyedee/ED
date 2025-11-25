@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 
+
 using namespace std; 
 
 class Tablero{
@@ -22,6 +23,10 @@ class Tablero{
         bool hay4EnLinea(char ficha) const;
         bool estaLleno() const;
         void imprimirTablero() const;
+
+        bool columnaLlena(int col) const;
+        bool hay3EnLinea(char ficha) const;
+        bool esPosicionSegura(int columna, char fichaJugador) const;
         
         
         //Metodos (getters y setters)
@@ -36,6 +41,9 @@ class Tablero{
         bool hay4EnLineaHorizontal(char ficha) const;
         bool hay4EnLineaVertical(char ficha) const;
         bool hay4EnLineaDiagonal(char ficha) const;
+        bool hay3Horizontal(char ficha)const;
+        bool hay3Vertical(char ficha)const;
+        bool hay3Diagonal(char ficha)const;
 
 };
 
