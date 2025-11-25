@@ -84,12 +84,12 @@ clean: CMakeFiles/4enRaya.dir/clean
 CMakeFiles/4enRaya.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\USER\Desktop\ED\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target 4enRaya"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\USER\Desktop\ED\build\CMakeFiles --progress-num=1,2,3 "Built target 4enRaya"
 .PHONY : CMakeFiles/4enRaya.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/4enRaya.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\USER\Desktop\ED\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\USER\Desktop\ED\build\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/4enRaya.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\USER\Desktop\ED\build\CMakeFiles 0
 .PHONY : CMakeFiles/4enRaya.dir/rule
@@ -101,7 +101,7 @@ CMakeFiles/4enRaya.dir/rule: cmake_check_build_system
 # codegen rule for target.
 CMakeFiles/4enRaya.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\USER\Desktop\ED\build\CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target 4enRaya"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\USER\Desktop\ED\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target 4enRaya"
 .PHONY : CMakeFiles/4enRaya.dir/codegen
 
 # clean rule for target.
