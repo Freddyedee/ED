@@ -45,15 +45,12 @@ public:
 
     // Verifica si el jugador tiene 4 fichas en línea en cualquier dirección
     bool hay4EnLinea(char ficha) const;
+    // Devuelve el total de secuencias de 4 del jugador en cualquier dirección
+     int contarSecuencias(char ficha) const;
 
-private:
     // =========================
     // Modalidad 2 (conteo de secuencias)
     // =========================
-
-public:
-    // Devuelve el total de secuencias de 4 del jugador en cualquier dirección
-    int contarSecuencias(char ficha) const;
 
 private:
     // Contadores privados por dirección

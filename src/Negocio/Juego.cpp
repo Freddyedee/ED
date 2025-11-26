@@ -3,8 +3,8 @@
 
 // Constructor: inicializa el juego con dos jugadores y una modalidad
 // El tablero se crea con 6 filas y 7 columnas
-Juego::Juego(Jugador* j1, Jugador* j2, int modalidad)
-    : tablero(6, 7), jugador1(j1), jugador2(j2), jugadorActual(j1),
+Juego::Juego(Jugador* pj1, Jugador* pj2, int modalidad)
+    : tablero(6, 7), jugador1(pj1), jugador2(pj2), jugadorActual(pj1),
       ganador(nullptr), modalidad(modalidad), juegoCargado(false),
       totalMovimientos(0) {}
 
@@ -68,43 +68,6 @@ void Juego::aplicarReglasModalidad2() {
     if (s1 != s2) {
         ganador = (s1 > s2) ? jugador1 : jugador2;
     }
-}
-
-// ---------- MÉTODOS AUXILIARES FUNCIONALES ----------
-
-// Inicia el juego en consola (bucle básico)
-void Juego::iniciarJuego() {
-    int columna;
-    while (!juegoTerminado()) {
-        imprimirEstadoJuego();
-        std::cout << jugadorActual->getNombre() << " ("
-                  << jugadorActual->getFicha() << ") ingresa columna: ";
-        std::cin >> columna;
-        if (!realizarMovimiento(columna)) {
-            std::cout << "Movimiento inválido, intenta de nuevo.\n";
-        }
-    }
-
-    imprimirEstadoJuego();
-    if (hayGanador())
-        std::cout << "¡Ganador: " << ganador->getNombre() << "!\n";
-    else
-        std::cout << "Empate. No hay ganador.\n";
-}
-
-// Ejecuta un turno específico del jugador actual
-bool Juego::jugarTurno(int columna) { 
-    return realizarMovimiento(columna); 
-}
-
-// Muestra el estado del tablero y algunos datos básicos
-void Juego::imprimirEstadoJuego() {
-    tablero.imprimir(); // Supone que Tablero tiene método imprimir()
-    std::cout << "Movimientos totales: " << totalMovimientos << "\n";
-    std::cout << jugador1->getNombre() << " ("
-              << jugador1->getFicha() << ") vs "
-              << jugador2->getNombre() << " ("
-              << jugador2->getFicha() << ")\n\n";
 }
 
 // Setters simples

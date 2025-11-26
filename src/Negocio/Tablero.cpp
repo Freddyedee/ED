@@ -33,10 +33,7 @@ void Tablero::imprimirTablero() const {
         cout << " " << j << " ";
     }
     cout << "\n";
-<<<<<<< HEAD
-=======
     
->>>>>>> d309bf43f6dfcab0bcc5a1aba00d0a7813a5ab10
 }
 
 // Coloca una ficha en la columna indicada (cae hasta la fila más baja disponible)
@@ -83,10 +80,11 @@ bool Tablero::hay4EnLineaVertical(char ficha) const {
     return contarVerticales(ficha) > 0;
 }
 
-// Diagonal
 bool Tablero::hay4EnLineaDiagonal(char ficha) const {
-    return (contarDiagonalesPositivas(ficha) + contarDiagonalesNegativas(ficha)) > 0;
+    return contarDiagonalesPositivas(ficha) > 0 ||
+           contarDiagonalesNegativas(ficha) > 0;
 }
+
 
 // =========================
 // Conteo de secuencias (Modalidad 2)

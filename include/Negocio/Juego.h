@@ -25,12 +25,9 @@ public:
     Juego(Jugador* jugador1, Jugador* jugador2, int modalidad);
 
     // Flujo principal del juego
-    void iniciarJuego();          // Comienza la partida
-    bool jugarTurno(int columna); // Ejecuta un turno del jugador actual en la columna indicada
     void cambiarTurno();          // Cambia el turno al otro jugador
     bool juegoTerminado() const;  // Verifica si la partida ha terminado
     bool hayGanador() const;      // Verifica si hay un ganador
-    void imprimirEstadoJuego();   // Muestra el estado actual del tablero y jugadores
 
     // Movimiento y reglas
     bool realizarMovimiento(int columna);   // Realiza el movimiento y actualiza el tablero
