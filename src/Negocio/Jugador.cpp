@@ -1,16 +1,23 @@
-#include "Negocio/Jugador.h"
-#include <String>
+#include "Jugador.h"
 
-using namespace std;
+// Constructor
+Jugador::Jugador(const std::string& nombre, char ficha)
+    : nombre(nombre), ficha(ficha) {}
 
-Jugador::Jugador(string nombre, char ficha) : nombre(nombre), ficha(ficha){
-
+// Getters
+std::string Jugador::getNombre() const {
+    return nombre;
 }
 
-string Jugador::getNombre(){
-    return this->nombre; 
+char Jugador::getFicha() const {
+    return ficha;
 }
 
-char Jugador::getFicha(){
-    return this->ficha; 
+// Setters
+void Jugador::setNombre(const std::string& n) {
+    nombre = n;
+}
+
+void Jugador::setFicha(char f) {
+    ficha = f;
 }

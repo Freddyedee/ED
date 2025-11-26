@@ -150,4 +150,5 @@ CMakeFiles/4enRaya.dir/src/main.cpp.obj: \
  C:/Users/USER/Desktop/ED/include/Negocio/Jugador.h \
  C:/Users/USER/Desktop/ED/include/Negocio/Tablero.h \
  C:/Users/USER/Desktop/ED/include/Negocio/JugadorHumano.h \
- C:/Users/USER/Desktop/ED/include/Negocio/Jugador.h
+ C:/Users/USER/Desktop/ED/include/Negocio/Jugador.h \
+ C:/Users/USER/Desktop/ED/include/Negocio/Juego.h

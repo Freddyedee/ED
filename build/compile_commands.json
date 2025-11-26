@@ -22,5 +22,11 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/4enRaya.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -g -O0 -o CMakeFiles\\4enRaya.dir\\src\\Negocio\\JugadorHumano.cpp.obj -c C:\\Users\\USER\\Desktop\\ED\\src\\Negocio\\JugadorHumano.cpp",
   "file": "C:/Users/USER/Desktop/ED/src/Negocio/JugadorHumano.cpp",
   "output": "CMakeFiles/4enRaya.dir/src/Negocio/JugadorHumano.cpp.obj"
+},
+{
+  "directory": "C:/Users/USER/Desktop/ED/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/4enRaya.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -g -O0 -o CMakeFiles\\4enRaya.dir\\src\\Negocio\\Juego.cpp.obj -c C:\\Users\\USER\\Desktop\\ED\\src\\Negocio\\Juego.cpp",
+  "file": "C:/Users/USER/Desktop/ED/src/Negocio/Juego.cpp",
+  "output": "CMakeFiles/4enRaya.dir/src/Negocio/Juego.cpp.obj"
 }
 ]

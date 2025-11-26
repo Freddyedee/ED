@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "C:/Users/USER/Desktop/ED/bin/4enRaya.exe"
   "C:/Users/USER/Desktop/ED/bin/4enRaya.exe.manifest"
   "C:/Users/USER/Desktop/ED/bin/4enRaya.pdb"
+  "CMakeFiles/4enRaya.dir/src/Negocio/Juego.cpp.obj"
+  "CMakeFiles/4enRaya.dir/src/Negocio/Juego.cpp.obj.d"
   "CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.obj"
   "CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.obj.d"
   "CMakeFiles/4enRaya.dir/src/Negocio/JugadorHumano.cpp.obj"

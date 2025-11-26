@@ -1,58 +1,128 @@
 #include <iostream>
+#include <string>
 #include "Negocio/Tablero.h"
 #include "Negocio/Jugador.h"
 #include "Negocio/JugadorHumano.h"
+#include "Negocio/Juego.h"
 
-int main() {
-    //Opcion 1 de creacion : 
+using namespace std;
 
-    Tablero* tablero1 = new Tablero(); 
-    Jugador* jugador1 = new JugadorHumano("Alice", 'O');
-    
+// -----------------------------------------------------
+// Mostrar un menú simple
+// -----------------------------------------------------
+void mostrarMenu() {
+    cout << "\n========== MENU PRINCIPAL ==========\n";
+    cout << "1. Nueva partida (Humano vs Humano)\n";
+    cout << "2. Salir\n";
+    cout << "Seleccione una opcion: ";
+}
 
-    cout << "===== PRUIEBA JUGADOR HUMANO =====" << endl;
-    tablero1->imprimirTablero();
+// -----------------------------------------------------
+// Imprimir tablero
+// -----------------------------------------------------
+void imprimirTablero(const Tablero& t) {
+    cout << "\n";
+    t.imprimirTablero();
+    cout << "\n";
+}
 
-    int columnaJugador = jugador1->elegirColumna(*tablero1);
-    cout << "El jugador eligio la columna: " << columnaJugador << endl;
-    
-    if(tablero1->colocarFicha(columnaJugador, jugador1->getFicha())){
-        cout << "Ficha colocada exitosamente." << endl;
-    }else{
-        cout << "Columna llena o invalida. Intente de nuevo." << endl;  
-    }
+// -----------------------------------------------------
+// Ejecutar una partida completa
+// -----------------------------------------------------
+void jugarPartida(Juego& juego) {
 
-    tablero1->imprimirTablero();
+    while (!juego.juegoTerminado()) {
 
+        system("cls"); // Para Windows
 
+        cout << "\n=========== 4 EN LINEA ===========\n";
+        cout << "Turno de: "
+             << juego.getJugadorActual()->getNombre()
+             << " (" << juego.getJugadorActual()->getFicha() << ")\n";
 
-    //PRUEBA DE JUGAROR HUMANO
+        imprimirTablero(juego.getTablero());
 
+        int columna;
+        cout << "Ingrese columna (0 - "
+             << juego.getTablero().getColumnas() - 1 << "): ";
+        cin >> columna;
 
-
-    /*bool turnoX = true; 
-    int col; 
-
-     while (!tablero1->estaLleno()) {
-        tablero1->imprimirTablero();
-        std::cout << "Jugador " << (turnoX ? 'X' : 'O') << ", elige columna: ";
-        std::cin >> col;
-
-        if (!tablero1->colocarFicha(col, turnoX ? 'X' : 'O')) {
-            std::cout << "Movimiento inválido\n";
+        if (cin.fail()) {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cout << "Entrada invalida.\n";
+            system("pause");
             continue;
         }
 
-        if (tablero1->hay4EnLinea(turnoX ? 'X' : 'O')) {
-            tablero1->imprimirTablero();
-            std::cout << "Jugador " << (turnoX ? 'X' : 'O') << " gana!\n";
+        if (!juego.realizarMovimiento(columna)) {
+            cout << "Movimiento no valido.\n";
+            system("pause");
+        }
+    }
+
+    // Final de la partida
+    system("cls");
+    imprimirTablero(juego.getTablero());
+
+    cout << "\n============== RESULTADO ==============\n";
+
+    if (juego.getGanador() == nullptr)
+        cout << "La partida terminó en EMPATE.\n";
+    else
+        cout << "El GANADOR es: "
+             << juego.getGanador()->getNombre()
+             << " (" << juego.getGanador()->getFicha() << ")\n";
+
+    cout << "Total de movimientos: " << juego.getTotalMovimientos() << "\n";
+
+    system("pause");
+}
+
+// -----------------------------------------------------
+// PROGRAMA PRINCIPAL DE PRUEBA
+// -----------------------------------------------------
+int main() {
+
+    while (true) {
+        mostrarMenu();
+
+        int opcion;
+        cin >> opcion;
+
+        if (opcion == 1) {
+
+            string n1, n2;
+            cout << "Nombre jugador 1: ";
+            cin >> n1;
+            cout << "Nombre jugador 2: ";
+            cin >> n2;
+
+            // Crear jugadores humanos
+            Jugador* j1 = new JugadorHumano(n1, 'X');
+            Jugador* j2 = new JugadorHumano(n2, 'O');
+
+            int modalidad;
+            cout << "\nSeleccione modalidad:\n";
+            cout << "1. Primer 4 en línea\n";
+            cout << "2. Mayor número de secuencias\n";
+            cout << "Modalidad: ";
+            cin >> modalidad;
+
+            Juego juego(j1, j2, modalidad);
+
+            jugarPartida(juego);
+
+            
+        }
+        else if (opcion == 2) {
+            cout << "Saliendo...\n";
             break;
         }
+        else {
+            cout << "Opcion invalida.\n";
+        }
+    }
 
-        turnoX = !turnoX;*/
-    
-
-    
-    
     return 0;
 }
