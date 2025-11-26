@@ -33,6 +33,10 @@ void Tablero::imprimirTablero() const {
         cout << " " << j << " ";
     }
     cout << "\n";
+<<<<<<< HEAD
+=======
+    
+>>>>>>> d309bf43f6dfcab0bcc5a1aba00d0a7813a5ab10
 }
 
 // Coloca una ficha en la columna indicada (cae hasta la fila más baja disponible)

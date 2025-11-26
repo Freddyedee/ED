@@ -79,12 +79,21 @@ set(FILES_TO_CHECK
     # ========================
     # MÓDULO: Negocio
     # ========================
+<<<<<<< HEAD
+=======
     
     "src/Negocio/Tablero.cpp"
     "src/Negocio/Jugador.cpp"
     "src/Negocio/JugadorHumano.cpp"
+<<<<<<< HEAD
     src/Negocio/Juego.cpp
+=======
+>>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516
+>>>>>>> d309bf43f6dfcab0bcc5a1aba00d0a7813a5ab10
 
+    "src/Negocio/Tablero.cpp"
+    "src/Negocio/Jugador.cpp"
+s
     # ========================
     # MÓDULO: Presentación
     # ========================

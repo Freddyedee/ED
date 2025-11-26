@@ -8,11 +8,20 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+<<<<<<< HEAD
   "C:/Users/USER/Desktop/ED/src/Negocio/Juego.cpp" "CMakeFiles/4enRaya.dir/src/Negocio/Juego.cpp.obj" "gcc" "CMakeFiles/4enRaya.dir/src/Negocio/Juego.cpp.obj.d"
+=======
+<<<<<<< HEAD
+  "C:/Users/usuario/ED proyet1/ED/src/Negocio/Jugador.cpp" "CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.obj" "gcc" "CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.obj.d"
+  "C:/Users/usuario/ED proyet1/ED/src/Negocio/Tablero.cpp" "CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.obj" "gcc" "CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.obj.d"
+  "C:/Users/usuario/ED proyet1/ED/src/main.cpp" "CMakeFiles/4enRaya.dir/src/main.cpp.obj" "gcc" "CMakeFiles/4enRaya.dir/src/main.cpp.obj.d"
+=======
+>>>>>>> d309bf43f6dfcab0bcc5a1aba00d0a7813a5ab10
   "C:/Users/USER/Desktop/ED/src/Negocio/Jugador.cpp" "CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.obj" "gcc" "CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.obj.d"
   "C:/Users/USER/Desktop/ED/src/Negocio/JugadorHumano.cpp" "CMakeFiles/4enRaya.dir/src/Negocio/JugadorHumano.cpp.obj" "gcc" "CMakeFiles/4enRaya.dir/src/Negocio/JugadorHumano.cpp.obj.d"
   "C:/Users/USER/Desktop/ED/src/Negocio/Tablero.cpp" "CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.obj" "gcc" "CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.obj.d"
   "C:/Users/USER/Desktop/ED/src/main.cpp" "CMakeFiles/4enRaya.dir/src/main.cpp.obj" "gcc" "CMakeFiles/4enRaya.dir/src/main.cpp.obj.d"
+>>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516
   )
 
 # Targets to which this target links which contain Fortran sources.

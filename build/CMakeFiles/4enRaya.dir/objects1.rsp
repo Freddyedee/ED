@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 CMakeFiles/4enRaya.dir/src/main.cpp.obj CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.obj CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.obj CMakeFiles/4enRaya.dir/src/Negocio/JugadorHumano.cpp.obj CMakeFiles/4enRaya.dir/src/Negocio/Juego.cpp.obj
+=======
+<<<<<<< HEAD
+CMakeFiles/4enRaya.dir/src/main.cpp.obj CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.obj CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.obj
+=======
+CMakeFiles/4enRaya.dir/src/main.cpp.obj CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.obj CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.obj CMakeFiles/4enRaya.dir/src/Negocio/JugadorHumano.cpp.obj
+>>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516
+>>>>>>> d309bf43f6dfcab0bcc5a1aba00d0a7813a5ab10

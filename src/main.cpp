@@ -1,9 +1,19 @@
 #include <iostream>
+<<<<<<< HEAD
 #include <string>
 #include "Negocio/Tablero.h"
 #include "Negocio/Jugador.h"
 #include "Negocio/JugadorHumano.h"
 #include "Negocio/Juego.h"
+=======
+<<<<<<< HEAD
+#include "../include/Negocio/Tablero.h"
+=======
+#include "Negocio/Tablero.h"
+#include "Negocio/Jugador.h"
+#include "Negocio/JugadorHumano.h"
+>>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516
+>>>>>>> d309bf43f6dfcab0bcc5a1aba00d0a7813a5ab10
 
 using namespace std;
 
