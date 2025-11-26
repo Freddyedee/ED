@@ -1,50 +1,71 @@
-#include "GestorArchivos.h"
+#include "Datos/GestorArchivos.h"
 #include <fstream>
+#include <filesystem>
+#include <string>
 #include <iostream>
+#include <ctime>
+#include <iomanip>
 
+bool GestorArchivos::guardarJuego(const Juego& juego, const std::string& nombreArchivo) {
 
-bool GestorArchivos::guardarJuego(const Juego& juego, const string &nombreArchivo){
+    std::ofstream archivo(nombreArchivo);
 
-    ofstream archivo(nombreArchivo);
-
-    if(!archivo.is_open()){
-        cerr << "Error al abrir el archivo para guardar el juego." << endl;
+    if (!archivo.is_open()) {
+        std::cerr << "No se pudo abrir el archivo para guardar.\n";
         return false;
     }
 
-    Jugador *jugador1 = juego.getJugadorActual();
-
-   
-    // 1. Guardar dimensiones del tablero
-    archivo << juego.getTablero().getFilas() << " "
-            << juego.getTablero().getColumnas() << "\n";
-
-      // 2. Guardar modalidad
-    archivo << juego.getModalidad() << "\n";
-
-     // 3. Guardar jugadores
-    archivo << juego.getJugador1()->getNombre() << " "
-            << juego.getJugador1()->getFicha() << "\n";
-
-    archivo << juego.getJugador2()->getNombre() << " "
-            << juego.getJugador2()->getFicha() << "\n";
-
-
-     // 4. Guardar ficha del jugador en turno
-    archivo << juego.getJugadorActual()->getFicha() << "\n";
-
-    // 5. Guardar contador de movimientos
-    archivo << juego.getTotalMovimientos() << "\n";
-
-
-    //guardado del tablero celda por celda
-
-      // 6. Guardar el tablero
+    // -------------------------------------------
+    // Guardar dimensiones del tablero
+    // -------------------------------------------
     const Tablero& t = juego.getTablero();
+    int filas = t.getFilas();
+    int columnas = t.getColumnas();
 
-    for (int i = 0; i < t.getFilas(); i++) {
-        for (int j = 0; j < t.getColumnas(); j++) {
-            archivo << t.getCelda(i, j);
+    archivo << filas << " " << columnas << "\n";
+
+    // -------------------------------------------
+    // Guardar modalidad
+    // -------------------------------------------
+    int modalidad = juego.getModalidad();
+    archivo << modalidad << "\n";
+
+    // -------------------------------------------
+    // Guardar jugador 1
+    // -------------------------------------------
+    std::string nombre1 = juego.getJugador1()->getNombre();
+    char ficha1 = juego.getJugador1()->getFicha();
+    archivo << nombre1 << " " << ficha1 << "\n";
+
+    // -------------------------------------------
+    // Guardar jugador 2
+    // -------------------------------------------
+    std::string nombre2 = juego.getJugador2()->getNombre();
+    char ficha2 = juego.getJugador2()->getFicha();
+    archivo << nombre2 << " " << ficha2 << "\n";
+
+    // -------------------------------------------
+    // Guardar jugador en turno
+    // -------------------------------------------
+    std::string nombreTurno = juego.getJugadorActual()->getNombre();
+    char fichaTurno = juego.getJugadorActual()->getFicha();
+    archivo << nombreTurno << " " << fichaTurno << "\n";
+
+    // -------------------------------------------
+    // Guardar total de movimientos
+    // -------------------------------------------
+    int movimientos = juego.getTotalMovimientos();
+    archivo << movimientos << "\n";
+
+    // -------------------------------------------
+    // Guardar tablero
+    // -------------------------------------------
+    archivo << "Tablero:\n";
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+
+            char celda = t.getCelda(i, j);
+            archivo << celda;
         }
         archivo << "\n";
     }
@@ -57,71 +78,93 @@ bool GestorArchivos::guardarJuego(const Juego& juego, const string &nombreArchiv
 // -------------------------------------------------------------
 // Carga el estado completo del juego desde un archivo TXT
 // -------------------------------------------------------------
+bool GestorArchivos::cargarJuego(Juego& juego, const std::string& nombreArchivo) {
 
-bool GestorArchivos::cargarJuego(Juego& juego, const string& nombreArchivo){
+    std::ifstream archivo(nombreArchivo);
 
-
-    ifstream archivo(nombreArchivo);
-
-    if(!archivo.is_open()){
-        cerr << "Error al abrir el archivo para cargar el juego." << endl;
+    if (!archivo.is_open()) {
+        std::cerr << "No se pudo abrir el archivo para cargar.\n";
         return false;
     }
 
-    int filas, columnas; 
-    archivo >> filas >> columnas;
+    // -------------------------------------------
+    // Leer dimensiones del tablero
+    // -------------------------------------------
+    int filas = 0;
+    int columnas = 0;
+    archivo >> filas;
+    archivo >> columnas;
 
-    int modalidad;
+    // -------------------------------------------
+    // Leer modalidad
+    // -------------------------------------------
+    int modalidad = 0;
     archivo >> modalidad;
-    juego.setModelidad(modalidad);
+    juego.setModalidad(modalidad);
 
+    // -------------------------------------------
+    // Leer jugador 1
+    // -------------------------------------------
+    std::string nombre1;
+    char ficha1;
 
-    // Cargar datos de jugadores
-    string nombreJugador1, nombreJugador2;
-    char fichaJugador1, fichaJugador2;
+    archivo >> nombre1;
+    archivo >> ficha1;
 
-    archivo >> nombreJugador1 >> fichaJugador1;
-    archivo >> nombreJugador2 >> fichaJugador2;
+    juego.getJugador1()->setNombre(nombre1);
+    juego.getJugador1()->setFicha(ficha1);
 
-    juego.getJugador1()->setNombre(nombreJugador1);
-    juego.getJugador1()->setFicha(fichaJugador1);
+    // -------------------------------------------
+    // Leer jugador 2
+    // -------------------------------------------
+    std::string nombre2;
+    char ficha2;
 
-    juego.getJugador2()->setNombre(nombreJugador2);
-    juego.getJugador2()->setFicha(fichaJugador2);
+    archivo >> nombre2;
+    archivo >> ficha2;
 
-    //Turno actual
-    char fichaTurno; 
-    archivo >> fichaTurno; 
+    juego.getJugador2()->setNombre(nombre2);
+    juego.getJugador2()->setFicha(ficha2);
 
-    if(juego.getJugador1()->getFicha() == fichaTurno){
+    // -------------------------------------------
+    // Leer turno
+    // -------------------------------------------
+    std::string nombreTurno;
+    char fichaTurno;
+
+    archivo >> nombreTurno;
+    archivo >> fichaTurno;
+
+    if (fichaTurno == juego.getJugador1()->getFicha()) {
         juego.setTurno(juego.getJugador1());
-    }
-    else{
+    } else {
         juego.setTurno(juego.getJugador2());
     }
 
-    // --- Movimientos ---
-    int movimientos;
-    archivo >> movimientos;
-    juego.reiniciarMovimientos();
-    
-    Tablero &tableroCopia = juego.getTablero(); 
-    string linea; 
-    getline(archivo, linea); // Limpiar el salto de línea restante
+    // -------------------------------------------
+    // Leer tablero
+    // -------------------------------------------
+    std::string linea;
+    getline(archivo, linea); // Limpiar \n pendiente
 
-    for (int i = 0; i < filas; i++){
+    Tablero& t = juego.getTablero();
+
+    for (int i = 0; i < filas; i++) {
+
         getline(archivo, linea);
-        for (int j = 0; j < columnas; j++){
-           tableroCopia.setCelda(i, j, linea[j]);
+
+        for (int j = 0; j < columnas; j++) {
+
+            char celda = linea[j];
+            t.setCelda(i, j, celda);
         }
     }
 
-    archivoEntrada.close();
+    archivo.close();
     return true;
-
 }
 
-    
+
 
 
 

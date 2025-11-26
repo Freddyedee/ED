@@ -65,24 +65,7 @@ bool Tablero::estaLleno() const {
 
 // Verifica si el jugador tiene 4 en línea en cualquier dirección
 bool Tablero::hay4EnLinea(char ficha) const {
-    return hay4EnLineaHorizontal(ficha) || 
-           hay4EnLineaVertical(ficha) || 
-           hay4EnLineaDiagonal(ficha);
-}
-
-// Horizontal
-bool Tablero::hay4EnLineaHorizontal(char ficha) const {
-    return contarHorizontales(ficha) > 0;
-}
-
-// Vertical
-bool Tablero::hay4EnLineaVertical(char ficha) const {
-    return contarVerticales(ficha) > 0;
-}
-
-bool Tablero::hay4EnLineaDiagonal(char ficha) const {
-    return contarDiagonalesPositivas(ficha) > 0 ||
-           contarDiagonalesNegativas(ficha) > 0;
+    return contarSecuencias(ficha) > 0;
 }
 
 

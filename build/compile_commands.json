@@ -1,23 +1,17 @@
 [
 {
-  "directory": "C:/Users/usuario/ED proyet1/ED/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/4enRaya.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -g -O0 -o CMakeFiles\\4enRaya.dir\\src\\main.cpp.obj -c \"C:\\Users\\usuario\\ED proyet1\\ED\\src\\main.cpp\"",
-  "file": "C:/Users/usuario/ED proyet1/ED/src/main.cpp",
+  "directory": "C:/Users/USER/Desktop/ED/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/4enRaya.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -g -O0 -o CMakeFiles\\4enRaya.dir\\src\\main.cpp.obj -c C:\\Users\\USER\\Desktop\\ED\\src\\main.cpp",
+  "file": "C:/Users/USER/Desktop/ED/src/main.cpp",
   "output": "CMakeFiles/4enRaya.dir/src/main.cpp.obj"
 },
 {
-  "directory": "C:/Users/usuario/ED proyet1/ED/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/4enRaya.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -g -O0 -o CMakeFiles\\4enRaya.dir\\src\\Negocio\\Tablero.cpp.obj -c \"C:\\Users\\usuario\\ED proyet1\\ED\\src\\Negocio\\Tablero.cpp\"",
-  "file": "C:/Users/usuario/ED proyet1/ED/src/Negocio/Tablero.cpp",
+  "directory": "C:/Users/USER/Desktop/ED/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/4enRaya.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -g -O0 -o CMakeFiles\\4enRaya.dir\\src\\Negocio\\Tablero.cpp.obj -c C:\\Users\\USER\\Desktop\\ED\\src\\Negocio\\Tablero.cpp",
+  "file": "C:/Users/USER/Desktop/ED/src/Negocio/Tablero.cpp",
   "output": "CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.obj"
 },
 {
-<<<<<<< HEAD
-  "directory": "C:/Users/usuario/ED proyet1/ED/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/4enRaya.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -g -O0 -o CMakeFiles\\4enRaya.dir\\src\\Negocio\\Jugador.cpp.obj -c \"C:\\Users\\usuario\\ED proyet1\\ED\\src\\Negocio\\Jugador.cpp\"",
-  "file": "C:/Users/usuario/ED proyet1/ED/src/Negocio/Jugador.cpp",
-  "output": "CMakeFiles/4enRaya.dir/src/Negocio/Jugador.cpp.obj"
-=======
   "directory": "C:/Users/USER/Desktop/ED/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/4enRaya.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -g -O0 -o CMakeFiles\\4enRaya.dir\\src\\Negocio\\Jugador.cpp.obj -c C:\\Users\\USER\\Desktop\\ED\\src\\Negocio\\Jugador.cpp",
   "file": "C:/Users/USER/Desktop/ED/src/Negocio/Jugador.cpp",
@@ -28,15 +22,17 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/4enRaya.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -g -O0 -o CMakeFiles\\4enRaya.dir\\src\\Negocio\\JugadorHumano.cpp.obj -c C:\\Users\\USER\\Desktop\\ED\\src\\Negocio\\JugadorHumano.cpp",
   "file": "C:/Users/USER/Desktop/ED/src/Negocio/JugadorHumano.cpp",
   "output": "CMakeFiles/4enRaya.dir/src/Negocio/JugadorHumano.cpp.obj"
-<<<<<<< HEAD
 },
 {
   "directory": "C:/Users/USER/Desktop/ED/build",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/4enRaya.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -g -O0 -o CMakeFiles\\4enRaya.dir\\src\\Negocio\\Juego.cpp.obj -c C:\\Users\\USER\\Desktop\\ED\\src\\Negocio\\Juego.cpp",
   "file": "C:/Users/USER/Desktop/ED/src/Negocio/Juego.cpp",
   "output": "CMakeFiles/4enRaya.dir/src/Negocio/Juego.cpp.obj"
-=======
->>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516
->>>>>>> d309bf43f6dfcab0bcc5a1aba00d0a7813a5ab10
+},
+{
+  "directory": "C:/Users/USER/Desktop/ED/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/4enRaya.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -g -O0 -o CMakeFiles\\4enRaya.dir\\src\\Datos\\GestorArchivos.cpp.obj -c C:\\Users\\USER\\Desktop\\ED\\src\\Datos\\GestorArchivos.cpp",
+  "file": "C:/Users/USER/Desktop/ED/src/Datos/GestorArchivos.cpp",
+  "output": "CMakeFiles/4enRaya.dir/src/Datos/GestorArchivos.cpp.obj"
 }
 ]
