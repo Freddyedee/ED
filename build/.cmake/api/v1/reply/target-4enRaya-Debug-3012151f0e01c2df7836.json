@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "C:/Users/usuario/ED proyet1/ED/bin/4enRaya.exe"
+			"path" : "C:/Users/USER/Desktop/ED/bin/4enRaya.exe"
 		},
 		{
-			"path" : "C:/Users/usuario/ED proyet1/ED/bin/4enRaya.pdb"
+			"path" : "C:/Users/USER/Desktop/ED/bin/4enRaya.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -29,31 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-<<<<<<<< HEAD:build/.cmake/api/v1/reply/target-4enRaya-Debug-d4984e6d628babdd1262.json
-				"line" : 124,
-========
-				"line" : 125,
->>>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516:build/.cmake/api/v1/reply/target-4enRaya-Debug-785e216af89f98fb20e2.json
+				"line" : 126,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-<<<<<<<< HEAD:build/.cmake/api/v1/reply/target-4enRaya-Debug-d4984e6d628babdd1262.json
-				"line" : 160,
-========
-				"line" : 161,
->>>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516:build/.cmake/api/v1/reply/target-4enRaya-Debug-785e216af89f98fb20e2.json
+				"line" : 162,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-<<<<<<<< HEAD:build/.cmake/api/v1/reply/target-4enRaya-Debug-d4984e6d628babdd1262.json
-				"line" : 137,
-========
-				"line" : 138,
->>>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516:build/.cmake/api/v1/reply/target-4enRaya-Debug-785e216af89f98fb20e2.json
+				"line" : 139,
 				"parent" : 0
 			}
 		]
@@ -83,7 +71,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/usuario/ED proyet1/ED/include"
+					"path" : "C:/Users/USER/Desktop/ED/include"
 				}
 			],
 			"language" : "CXX",
@@ -99,12 +87,10 @@
 			[
 				0,
 				1,
-<<<<<<<< HEAD:build/.cmake/api/v1/reply/target-4enRaya-Debug-d4984e6d628babdd1262.json
-				2
-========
 				2,
-				3
->>>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516:build/.cmake/api/v1/reply/target-4enRaya-Debug-785e216af89f98fb20e2.json
+				3,
+				4,
+				5
 			]
 		}
 	],
@@ -143,12 +129,10 @@
 			[
 				0,
 				1,
-<<<<<<<< HEAD:build/.cmake/api/v1/reply/target-4enRaya-Debug-d4984e6d628babdd1262.json
-				2
-========
 				2,
-				3
->>>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516:build/.cmake/api/v1/reply/target-4enRaya-Debug-785e216af89f98fb20e2.json
+				3,
+				4,
+				5
 			]
 		}
 	],
@@ -171,15 +155,24 @@
 			"compileGroupIndex" : 0,
 			"path" : "src/Negocio/Jugador.cpp",
 			"sourceGroupIndex" : 0
-<<<<<<<< HEAD:build/.cmake/api/v1/reply/target-4enRaya-Debug-d4984e6d628babdd1262.json
-========
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/Negocio/JugadorHumano.cpp",
 			"sourceGroupIndex" : 0
->>>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516:build/.cmake/api/v1/reply/target-4enRaya-Debug-785e216af89f98fb20e2.json
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Negocio/Juego.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Datos/GestorArchivos.cpp",
+			"sourceGroupIndex" : 0
 		}
 	],
 	"type" : "EXECUTABLE"

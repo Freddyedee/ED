@@ -14,7 +14,7 @@
 
 
 cmake_minimum_required(VERSION 3.15) # Versión mínima recomendada de CMake
-project(4enRaya VERSION 1.0 LANGUAGES CXX) # Nombre y versión del proyecto
+project(Conecta4 VERSION 1.0 LANGUAGES CXX) # Nombre y versión del proyecto
 
 
 # =============================================================================
@@ -79,17 +79,12 @@ set(FILES_TO_CHECK
     # ========================
     # MÓDULO: Negocio
     # ========================
-<<<<<<< HEAD
-=======
-    
-    "src/Negocio/Tablero.cpp"
-    "src/Negocio/Jugador.cpp"
-    "src/Negocio/JugadorHumano.cpp"
->>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516
 
     "src/Negocio/Tablero.cpp"
     "src/Negocio/Jugador.cpp"
-s
+    "src/Negocio/JugadorHumano.cpp"
+    "src/Negocio/Juego.cpp"
+    "src/Datos/GestorArchivos.cpp"
     # ========================
     # MÓDULO: Presentación
     # ========================

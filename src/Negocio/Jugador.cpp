@@ -1,23 +1,36 @@
-<<<<<<< HEAD
-#include <iostream>
 #include "Negocio/Jugador.h"
 
-using namespace std;
-=======
-#include "Negocio/Jugador.h"
-#include <String>
+//
+// Constructor de Jugador.
+// Recibe un nombre y una ficha y los asigna a sus variables internas.
+//
+Jugador::Jugador(const std::string& nombre, char ficha)
+    : nombre(nombre), ficha(ficha) {}
 
-using namespace std;
-
-Jugador::Jugador(string nombre, char ficha) : nombre(nombre), ficha(ficha){
-
+//
+// Devuelve el nombre del jugador.
+//
+std::string Jugador::getNombre() const {
+    return nombre;
 }
 
-string Jugador::getNombre(){
-    return this->nombre; 
+//
+// Devuelve la ficha del jugador.
+//
+char Jugador::getFicha() const {
+    return ficha;
 }
 
-char Jugador::getFicha(){
-    return this->ficha; 
+//
+// Cambia el nombre del jugador.
+//
+void Jugador::setNombre(const std::string& nombre) {
+    this->nombre = nombre;
 }
->>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516
+
+//
+// Cambia la ficha del jugador.
+//
+void Jugador::setFicha(char ficha) {
+    this->ficha = ficha;
+}

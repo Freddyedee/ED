@@ -1,69 +1,67 @@
 #ifndef JUGADOR_H
 #define JUGADOR_H
 
-<<<<<<< HEAD
 #include <string>
-#include <vector>
+#include "Tablero.h"
 
-using namespace std; 
+//
+// Clase base abstracta que representa a un jugador del juego.
+// Puede ser un jugador humano, una IA u otro tipo de jugador,
+// ya que la clase define la interfaz común para todos.
+//
 
-class Jugador
-{
+class Jugador {
+
 private:
-    int score;
-    string nombre;
-    bool color;
+    std::string nombre; 
+    // Nombre del jugador. Se usa para mostrar mensajes,
+    // identificar a quién le toca el turno y guardar partidas.
+
+    char ficha;          
+    // Letra que representa la ficha del jugador (por ejemplo: 'X' o 'O').
+    // Esta letra será colocada en el tablero por ese jugador.
+
 
 public:
-    virtual void movimiento() = 0;
+
+    // -----------------------------------------------------------
+    // Constructor del jugador.
+    // Recibe un nombre y una ficha con la que jugará.
+    // -----------------------------------------------------------
+    Jugador(const std::string& nombre, char ficha);
+
+    // Destructor virtual para permitir herencia correcta.
+    // Obliga a que las clases derivadas destruyan recursos de manera segura.
+    virtual ~Jugador() = default;
+
+
+    // --- GETTERS ---
+
+    std::string getNombre() const; 
+    // Devuelve el nombre del jugador.
+
+    char getFicha() const; 
+    // Devuelve la ficha del jugador ('X', 'O', etc).
+
+
+    // --- SETTERS ---
+
+    void setNombre(const std::string& nombre);
+    // Cambia el nombre del jugador.
+
+    void setFicha(char ficha);
+    // Cambia la ficha del jugador.
+
+
+    // -----------------------------------------------------------
+    // Método abstracto que debe implementar cualquier clase 
+    // derivada (por ejemplo JugadorHumano, JugadorIA).
+    //
+    // Debe devolver la columna donde el jugador desea colocar
+    // su ficha. El tablero se pasa por referencia para que el 
+    // jugador pueda analizarlo y decidir una jugada.
+    // -----------------------------------------------------------
+    virtual int elegirColumna(Tablero& tablero) = 0;
 };
-
-class JugadorHumano : public Jugador{
-    public:
-    void movimiento() override;
-};
-
-class JugadorIA : public Jugador{
-    public:
-    void movimiento() override;
-    int revisar4Personal();
-};
-
-#endif
-=======
-
-#include <string>
-#include "Tablero.h" //inclusion para usar la clase Tablero
-
-using namespace std; 
-
-class Jugador{
-
-    Tablero tablero;
-    private :
-        string nombre;
-        char ficha; 
-
-        public : 
-
-        Jugador(string nombre, char ficha); 
-
-        string getNombre(); 
-        char getFicha(); 
-        void setNombre(string nombre); 
-        void setFicha(char ficha);
-
-        virtual int elegirColumna(Tablero& tablero)=0; //convierte a una clase en abstracta
-
-}; 
-
-
-
-
-
-
-
-
 
 #endif // JUGADOR_H
->>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516

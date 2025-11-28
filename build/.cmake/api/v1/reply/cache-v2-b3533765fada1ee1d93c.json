@@ -2,42 +2,6 @@
 	"entries" : 
 	[
 		{
-			"name" : "4enRaya_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/usuario/ED proyet1/ED/build"
-		},
-		{
-			"name" : "4enRaya_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "4enRaya_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/usuario/ED proyet1/ED"
-		},
-		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -51,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/addr2line.exe"
+			"value" : "C:/msys64/mingw64/bin/addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -67,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/ar.exe"
+			"value" : "C:/msys64/mingw64/bin/ar.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -91,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/usuario/ED proyet1/ED/build"
+			"value" : "c:/Users/USER/Desktop/ED/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -115,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "0"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -127,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "0"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -191,15 +155,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
-<<<<<<<< HEAD:build/.cmake/api/v1/reply/cache-v2-811f35f4fa3215686b0d.json
-			"value" : "C:/msys64/ucrt64/bin/g++.exe"
-========
+			"type" : "STRING",
 			"value" : "C:/msys64/mingw64/bin/g++.exe"
->>>>>>>> 68452347eb23b311314e2cb13fd31c7108c3d516:build/.cmake/api/v1/reply/cache-v2-ebe17ec5406901f325dd.json
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -215,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/gcc-ar.exe"
+			"value" : "C:/msys64/mingw64/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -231,7 +191,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/gcc-ranlib.exe"
+			"value" : "C:/msys64/mingw64/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -339,7 +299,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/gcc.exe"
+			"value" : "C:/msys64/mingw64/bin/gcc.exe"
 		},
 		{
 			"name" : "CMAKE_DLLTOOL",
@@ -355,7 +315,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/dlltool.exe"
+			"value" : "C:/msys64/mingw64/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EDIT_COMMAND",
@@ -495,7 +455,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/usuario/ED proyet1/ED/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/USER/Desktop/ED/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -567,7 +527,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/usuario/ED proyet1/ED"
+			"value" : "C:/Users/USER/Desktop/ED"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -579,7 +539,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/4enRaya"
+			"value" : "C:/Program Files (x86)/Conecta4"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -595,7 +555,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/ld.exe"
+			"value" : "C:/msys64/mingw64/bin/ld.exe"
 		},
 		{
 			"name" : "CMAKE_LIST_FILE_NAME",
@@ -623,7 +583,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/mingw32-make.exe"
+			"value" : "C:/msys64/mingw64/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -719,7 +679,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/nm.exe"
+			"value" : "C:/msys64/mingw64/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -747,7 +707,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/objcopy.exe"
+			"value" : "C:/msys64/mingw64/bin/objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -763,7 +723,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/objdump.exe"
+			"value" : "C:/msys64/mingw64/bin/objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -776,18 +736,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "1"
-		},
-		{
-			"name" : "CMAKE_PROJECT_COMPAT_VERSION",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : ""
 		},
 		{
 			"name" : "CMAKE_PROJECT_DESCRIPTION",
@@ -823,7 +771,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "4enRaya"
+			"value" : "Conecta4"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -899,7 +847,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/ranlib.exe"
+			"value" : "C:/msys64/mingw64/bin/ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -915,7 +863,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/windres.exe"
+			"value" : "C:/msys64/mingw64/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -1023,7 +971,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/readelf.exe"
+			"value" : "C:/msys64/mingw64/bin/readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1035,7 +983,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/CMake/share/cmake-4.1"
+			"value" : "C:/Program Files/CMake/share/cmake-4.0"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1159,7 +1107,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the archiver during the creation of static libraries during all build types."
+					"value" : "Flags used by the linker during the creation of static libraries during all build types."
 				}
 			],
 			"type" : "STRING",
@@ -1175,7 +1123,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the archiver during the creation of static libraries during DEBUG builds."
+					"value" : "Flags used by the linker during the creation of static libraries during DEBUG builds."
 				}
 			],
 			"type" : "STRING",
@@ -1191,7 +1139,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the archiver during the creation of static libraries during MINSIZEREL builds."
+					"value" : "Flags used by the linker during the creation of static libraries during MINSIZEREL builds."
 				}
 			],
 			"type" : "STRING",
@@ -1207,7 +1155,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the archiver during the creation of static libraries during RELEASE builds."
+					"value" : "Flags used by the linker during the creation of static libraries during RELEASE builds."
 				}
 			],
 			"type" : "STRING",
@@ -1223,7 +1171,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the archiver during the creation of static libraries during RELWITHDEBINFO builds."
+					"value" : "Flags used by the linker during the creation of static libraries during RELWITHDEBINFO builds."
 				}
 			],
 			"type" : "STRING",
@@ -1243,7 +1191,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/msys64/ucrt64/bin/strip.exe"
+			"value" : "C:/msys64/mingw64/bin/strip.exe"
 		},
 		{
 			"name" : "CMAKE_TAPI",
@@ -1276,6 +1224,42 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "Conecta4_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/USER/Desktop/ED/build"
+		},
+		{
+			"name" : "Conecta4_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Conecta4_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/USER/Desktop/ED"
 		}
 	],
 	"kind" : "cache",
