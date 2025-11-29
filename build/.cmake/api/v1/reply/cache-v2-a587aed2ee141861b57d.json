@@ -2,42 +2,6 @@
 	"entries" : 
 	[
 		{
-			"name" : "4enRaya_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/usuario/ED proyet1/ED/build"
-		},
-		{
-			"name" : "4enRaya_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "4enRaya_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/usuario/ED proyet1/ED"
-		},
-		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -575,7 +539,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/4enRaya"
+			"value" : "C:/Program Files (x86)/Conecta4"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -819,7 +783,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "4enRaya"
+			"value" : "Conecta4"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1272,6 +1236,42 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "Conecta4_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/usuario/ED proyet1/ED/build"
+		},
+		{
+			"name" : "Conecta4_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Conecta4_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/usuario/ED proyet1/ED"
 		}
 	],
 	"kind" : "cache",

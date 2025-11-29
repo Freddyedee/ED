@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "C:/Users/USER/Desktop/ED/bin/4enRaya.exe"
+			"path" : "C:/Users/usuario/ED proyet1/ED/bin/4enRaya.exe"
 		},
 		{
-			"path" : "C:/Users/USER/Desktop/ED/bin/4enRaya.pdb"
+			"path" : "C:/Users/usuario/ED proyet1/ED/bin/4enRaya.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -29,19 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 126,
+				"line" : 127,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 162,
+				"line" : 163,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 139,
+				"line" : 140,
 				"parent" : 0
 			}
 		]
@@ -71,7 +71,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/USER/Desktop/ED/include"
+					"path" : "C:/Users/usuario/ED proyet1/ED/include"
 				}
 			],
 			"language" : "CXX",
@@ -90,7 +90,8 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				6
 			]
 		}
 	],
@@ -132,7 +133,8 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				6
 			]
 		}
 	],
@@ -160,6 +162,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/Negocio/JugadorHumano.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Negocio/JugadorMaquina.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -22,6 +22,33 @@ void mostrarMenuJuego() {
     cout << "Seleccione una opcion: ";
 }
 
+void mostrarMenuTipoPartida() {
+    cout << "\n======= SELECCIONAR TIPO DE PARTIDA =======\n";
+    cout << "1. Jugador vs Jugador\n";
+    cout << "2. Jugador vs IA\n";
+    cout << "3. IA vs IA\n";
+    cout << "Seleccione una opcion: ";
+}
+
+Jugador* crearJugadorHumano(const string& nombre, char ficha) {
+    return new JugadorHumano(nombre, ficha);
+}
+
+Jugador* crearJugadorIA(const string& nombre, char ficha, char fichaEnemiga) {
+    return new JugadorMaquina(nombre, ficha, fichaEnemiga);
+}
+
+int pedirModalidad() {
+    int modalidad;
+    cout << "\nSeleccione modalidad:\n";
+    cout << "1. Modo clasico (4 en linea)\n";
+    cout << "2. Modo puntaje\n";
+    cout << "Opcion: ";
+    cin >> modalidad;
+    return modalidad;
+}
+
+
 int main() {
 
     GestorArchivos gestor;
@@ -34,25 +61,51 @@ int main() {
         cin >> opcionMenu;
 
         if (opcionMenu == 1) {
-            // ======== NUEVO JUEGO =========
+           // ======== NUEVO JUEGO =========
+
+            int tipoPartida;
+            mostrarMenuTipoPartida();
+            cin >> tipoPartida;
 
             string nombre1, nombre2;
-            int modalidad;
+            Jugador* j1 = nullptr;
+            Jugador* j2 = nullptr;
 
-            cout << "\nIngrese nombre del jugador 1: ";
-            cin >> nombre1;
-            cout << "Ingrese nombre del jugador 2: ";
-            cin >> nombre2;
+            if (tipoPartida == 1) { 
+                // ============ P vs P ============
+                cout << "\nIngrese nombre del Jugador 1: ";
+                cin >> nombre1;
+                cout << "Ingrese nombre del Jugador 2: ";
+                cin >> nombre2;
 
-            cout << "\nSeleccione modalidad:\n";
-            cout << "1. Modo clásico (4 en línea)\n";
-            cout << "2. Modo puntaje (contar secuencias)\n";
-            cout << "Opcion: ";
-            cin >> modalidad;
+                j1 = crearJugadorHumano(nombre1, 'X');
+                j2 = crearJugadorHumano(nombre2, 'O');
+            }
 
-            // Crear jugadores
-            Jugador* j1 = new JugadorHumano(nombre1, 'X');
-            Jugador* j2 = new JugadorHumano(nombre2, 'O');
+            else if (tipoPartida == 2) {
+                // ============ P vs IA ============
+                cout << "\nIngrese nombre del Jugador: ";
+                cin >> nombre1;
+
+                j1 = crearJugadorHumano(nombre1, 'X');
+                j2 = crearJugadorIA("CPU", 'O', 'X');
+            }
+
+            else if (tipoPartida == 3) {
+                // ============ IA vs IA ============
+                j1 = crearJugadorIA("CPU1", 'X', 'O');
+                j2 = crearJugadorIA("CPU2", 'O', 'X');
+
+                cout << "\nSe ha iniciado una partida IA vs IA.\n";
+            }
+
+            else {
+                cout << "Opcion invalida.\n";
+                continue;
+            }
+
+            // Pedir modalidad
+            int modalidad = pedirModalidad();
 
             // Crear juego
             juego = new Juego(j1, j2, modalidad);
