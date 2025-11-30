@@ -16,6 +16,9 @@ class Juego {
 private:
     // --- ESTADO INTERNO DEL JUEGO ---
 
+    int secuenciasJ1 = 0;
+    int secuenciasJ2 = 0;
+
     Tablero tablero;             
     // Objeto que representa la matriz del tablero y gestiona
     // la inserción de fichas y detección de líneas ganadoras.
@@ -57,6 +60,9 @@ public:
     Juego(Jugador* jugador1, Jugador* jugador2, int modalidad);
     // Constructor de copia
     Juego(const Juego& otro);
+
+    int getSecuenciasJ1() const { return secuenciasJ1; }
+    int getSecuenciasJ2() const { return secuenciasJ2; }
 
     // --- CONTROL DE FLUJO DEL JUEGO ---
 

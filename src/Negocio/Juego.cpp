@@ -183,12 +183,11 @@ Modalidad 2:
 Si empatan → no se asigna ganador (se define al final del juego).
 */
 void Juego::aplicarReglasModalidad2() {
-    int s1 = tablero.contarSecuencias(jugador1->getFicha());
-    int s2 = tablero.contarSecuencias(jugador2->getFicha());
+    // No se determina ganador aquí
+    // Solo almacenamos las secuencias por si se desean mostrar
 
-    if (s1 != s2) {
-        ganador = (s1 > s2) ? jugador1 : jugador2;
-    }
+    secuenciasJ1 = tablero.contarSecuencias(jugador1->getFicha());
+    secuenciasJ2 = tablero.contarSecuencias(jugador2->getFicha());
 }
 
 /*

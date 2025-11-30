@@ -104,9 +104,28 @@ void realizarTurno(Juego* juego) {
         juego->getTablero().imprimirTablero();
 
         // Verificar fin del juego
-        if (juego->hayGanador()) {
-            std::cout << "\nGanador: " << juego->getGanador()->getNombre() << "\n";
-            return;
+        if (juego->getModalidad() == 1) {
+            if (juego->hayGanador()) {
+                std::cout << "\nGanador: " << juego->getGanador()->getNombre() << "\n";
+                return;
+            }
+        }
+        else {
+            // Modalidad 2 → El ganador solo se decide cuando el tablero esté lleno
+            if (juego->getTablero().estaLleno()) {
+                int s1 = juego->getSecuenciasJ1();
+                int s2 = juego->getSecuenciasJ2();
+
+                std::cout << "\n=== TABLERO LLENO ===\n";
+                std::cout << "Secuencias Player 1: " << s1 << "\n";
+                std::cout << "Secuencias Player 2: " << s2 << "\n";
+
+                if (s1 > s2) std::cout << "GANADOR: " << juego->getJugador1()->getNombre() << "\n";
+                else if (s2 > s1) std::cout << "GANADOR: " << juego->getJugador2()->getNombre() << "\n";
+                else std::cout << "EMPATE!\n";
+
+                return;
+            }
         }
 
         if (juego->getTablero().estaLleno()) {
