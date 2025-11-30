@@ -178,3 +178,126 @@ char Tablero::getCelda(int fila, int columna) const {
 void Tablero::setCelda(int fila, int columna, char valor) {
     matriz[fila][columna] = valor;
 }
+
+
+
+bool Tablero::columnaLlena(int columna) const {
+
+    if (columna < 0 || columna >= columnas) { 
+        return true; 
+    }
+
+    return matriz[0][columna] != ' ';
+}
+
+bool Tablero::hay3EnLinea(char ficha) const {
+    return hay3Horizontal(ficha) ||
+           hay3Vertical(ficha) ||
+           hay3Diagonal(ficha);
+}
+
+bool Tablero::hay3Horizontal(char ficha) const {
+
+    for (int i = 0; i < filas; i++) {
+        int contador = 0;
+
+        for (int j = 0; j < columnas; j++) {
+
+            if (matriz[i][j] == ficha) {
+                contador++;
+            } else {
+                contador = 0;
+            }
+
+            if (contador == 3) {
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+
+bool Tablero::hay3Vertical(char ficha) const {
+
+    for (int j = 0; j < columnas; j++) {
+        int contador = 0;
+
+        for (int i = 0; i < filas; i++) {
+
+            if (matriz[i][j] == ficha) {
+                contador++;
+            } else {
+                contador = 0;
+            }
+
+            if (contador == 3) {
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+
+bool Tablero::hay3Diagonal(char ficha) const {
+
+    /*
+    Diagonal \ (pendiente positiva)
+    */
+    for (int i = 0; i < filas - 2; i++) {
+        for (int j = 0; j < columnas - 2; j++) {
+
+            if (matriz[i][j] == ficha &&
+                matriz[i+1][j+1] == ficha &&
+                matriz[i+2][j+2] == ficha) {
+                    return true;
+            }
+        }
+    }
+
+    /*
+    Diagonal / (pendiente negativa)
+    */
+    for (int i = 2; i < filas; i++) {
+        for (int j = 0; j < columnas - 2; j++) {
+
+            if (matriz[i][j] == ficha &&
+                matriz[i-1][j+1] == ficha &&
+                matriz[i-2][j+2] == ficha) {
+                    return true;
+            }
+        }
+    }
+
+    return false;
+}
+
+bool Tablero::esPosicionSegura(int columna, char fichaJugador) const {
+
+    if (columnaLlena(columna)) {
+        return false;
+    }
+
+    char fichaOponente = (fichaJugador == 'X' ? 'O' : 'X');
+
+    // Copia del tablero
+    Tablero copia = *this;
+    copia.colocarFicha(columna, fichaJugador);
+
+    // Probar todas las columnas posibles del oponente
+    for (int col = 0; col < columnas; col++) {
+
+        if (!copia.columnaLlena(col)) {
+
+            Tablero copia2 = copia;
+            copia2.colocarFicha(col, fichaOponente);
+
+            if (copia2.hay4EnLinea(fichaOponente)) {
+                return false;   // el oponente podría ganar
+            }
+        }
+    }
+
+    return true; // no da victoria inmediata al rival
+}

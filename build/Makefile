@@ -152,6 +152,30 @@ src/Datos/GestorArchivos.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Datos/GestorArchivos.cpp.s
 .PHONY : src/Datos/GestorArchivos.cpp.s
 
+src/Negocio/GestorMemoria.obj: src/Negocio/GestorMemoria.cpp.obj
+.PHONY : src/Negocio/GestorMemoria.obj
+
+# target to build an object file
+src/Negocio/GestorMemoria.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/GestorMemoria.cpp.obj
+.PHONY : src/Negocio/GestorMemoria.cpp.obj
+
+src/Negocio/GestorMemoria.i: src/Negocio/GestorMemoria.cpp.i
+.PHONY : src/Negocio/GestorMemoria.i
+
+# target to preprocess a source file
+src/Negocio/GestorMemoria.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/GestorMemoria.cpp.i
+.PHONY : src/Negocio/GestorMemoria.cpp.i
+
+src/Negocio/GestorMemoria.s: src/Negocio/GestorMemoria.cpp.s
+.PHONY : src/Negocio/GestorMemoria.s
+
+# target to generate assembly for a file
+src/Negocio/GestorMemoria.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/GestorMemoria.cpp.s
+.PHONY : src/Negocio/GestorMemoria.cpp.s
+
 src/Negocio/Juego.obj: src/Negocio/Juego.cpp.obj
 .PHONY : src/Negocio/Juego.obj
 
@@ -272,6 +296,54 @@ src/Negocio/Tablero.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Negocio/Tablero.cpp.s
 .PHONY : src/Negocio/Tablero.cpp.s
 
+src/Presentacion/Interaccion.obj: src/Presentacion/Interaccion.cpp.obj
+.PHONY : src/Presentacion/Interaccion.obj
+
+# target to build an object file
+src/Presentacion/Interaccion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Presentacion/Interaccion.cpp.obj
+.PHONY : src/Presentacion/Interaccion.cpp.obj
+
+src/Presentacion/Interaccion.i: src/Presentacion/Interaccion.cpp.i
+.PHONY : src/Presentacion/Interaccion.i
+
+# target to preprocess a source file
+src/Presentacion/Interaccion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Presentacion/Interaccion.cpp.i
+.PHONY : src/Presentacion/Interaccion.cpp.i
+
+src/Presentacion/Interaccion.s: src/Presentacion/Interaccion.cpp.s
+.PHONY : src/Presentacion/Interaccion.s
+
+# target to generate assembly for a file
+src/Presentacion/Interaccion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Presentacion/Interaccion.cpp.s
+.PHONY : src/Presentacion/Interaccion.cpp.s
+
+src/Presentacion/Menus.obj: src/Presentacion/Menus.cpp.obj
+.PHONY : src/Presentacion/Menus.obj
+
+# target to build an object file
+src/Presentacion/Menus.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Presentacion/Menus.cpp.obj
+.PHONY : src/Presentacion/Menus.cpp.obj
+
+src/Presentacion/Menus.i: src/Presentacion/Menus.cpp.i
+.PHONY : src/Presentacion/Menus.i
+
+# target to preprocess a source file
+src/Presentacion/Menus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Presentacion/Menus.cpp.i
+.PHONY : src/Presentacion/Menus.cpp.i
+
+src/Presentacion/Menus.s: src/Presentacion/Menus.cpp.s
+.PHONY : src/Presentacion/Menus.s
+
+# target to generate assembly for a file
+src/Presentacion/Menus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4enRaya.dir\build.make CMakeFiles/4enRaya.dir/src/Presentacion/Menus.cpp.s
+.PHONY : src/Presentacion/Menus.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -308,6 +380,9 @@ help:
 	@echo ... src/Datos/GestorArchivos.obj
 	@echo ... src/Datos/GestorArchivos.i
 	@echo ... src/Datos/GestorArchivos.s
+	@echo ... src/Negocio/GestorMemoria.obj
+	@echo ... src/Negocio/GestorMemoria.i
+	@echo ... src/Negocio/GestorMemoria.s
 	@echo ... src/Negocio/Juego.obj
 	@echo ... src/Negocio/Juego.i
 	@echo ... src/Negocio/Juego.s
@@ -323,6 +398,12 @@ help:
 	@echo ... src/Negocio/Tablero.obj
 	@echo ... src/Negocio/Tablero.i
 	@echo ... src/Negocio/Tablero.s
+	@echo ... src/Presentacion/Interaccion.obj
+	@echo ... src/Presentacion/Interaccion.i
+	@echo ... src/Presentacion/Interaccion.s
+	@echo ... src/Presentacion/Menus.obj
+	@echo ... src/Presentacion/Menus.i
+	@echo ... src/Presentacion/Menus.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

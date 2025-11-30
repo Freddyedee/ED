@@ -1,4 +1,6 @@
 #include "Negocio/Juego.h"
+#include "Negocio/JugadorHumano.h"
+#include "Negocio/JugadorMaquina.h"
 #include <iostream>
 
 /*
@@ -25,6 +27,32 @@ Juego::Juego(Jugador* pj1, Jugador* pj2, int modalidad)
       juegoCargado(false),    // Indica si se cargó desde archivo
       totalMovimientos(0)     // Movimientos realizados
 {}
+
+// Constructor de copia
+Juego::Juego(const Juego& otro) {
+    modalidad = otro.modalidad;
+    totalMovimientos = otro.totalMovimientos;
+
+    // Copiar jugadores
+    if (dynamic_cast<JugadorHumano*>(otro.jugador1))
+        jugador1 = new JugadorHumano(*static_cast<JugadorHumano*>(otro.jugador1));
+    else
+        jugador1 = new JugadorMaquina(*static_cast<JugadorMaquina*>(otro.jugador1));
+
+    if (dynamic_cast<JugadorHumano*>(otro.jugador2))
+        jugador2 = new JugadorHumano(*static_cast<JugadorHumano*>(otro.jugador2));
+    else
+        jugador2 = new JugadorMaquina(*static_cast<JugadorMaquina*>(otro.jugador2));
+
+    // Mantener turno
+    if (otro.jugadorActual == otro.jugador1) jugadorActual = jugador1;
+    else jugadorActual = jugador2;
+
+    ganador = nullptr; // o copiar si ya hay ganador
+
+    tablero = otro.tablero; // Asumiendo que Tablero tiene operador= o constructor de copia
+    juegoCargado = otro.juegoCargado;
+}
 
 /*
 ==========================================================

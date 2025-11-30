@@ -1,5 +1,6 @@
-CMakeFiles/4enRaya.dir/src/main.cpp.obj: \
- C:\Users\usuario\ED\ proyet1\ED\src\main.cpp \
+CMakeFiles/4enRaya.dir/src/Presentacion/Menus.cpp.obj: \
+ C:\Users\usuario\ED\ proyet1\ED\src\Presentacion\Menus.cpp \
+ C:/Users/usuario/EDPROY~1/ED/include/Presentacion/Menus.h \
  C:/msys64/ucrt64/include/c++/15.1.0/iostream \
  C:/msys64/ucrt64/include/c++/15.1.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/15.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -138,32 +139,4 @@ CMakeFiles/4enRaya.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.1.0/bits/basic_ios.tcc \
  C:/msys64/ucrt64/include/c++/15.1.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/15.1.0/istream \
- C:/msys64/ucrt64/include/c++/15.1.0/bits/istream.tcc \
- C:/msys64/ucrt64/include/c++/15.1.0/thread \
- C:/msys64/ucrt64/include/c++/15.1.0/bits/std_thread.h \
- C:/msys64/ucrt64/include/c++/15.1.0/bits/unique_ptr.h \
- C:/msys64/ucrt64/include/c++/15.1.0/bits/this_thread_sleep.h \
- C:/msys64/ucrt64/include/c++/15.1.0/bits/chrono.h \
- C:/msys64/ucrt64/include/c++/15.1.0/ratio \
- C:/msys64/ucrt64/include/c++/15.1.0/cstdint \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stdint.h \
- C:/msys64/ucrt64/include/stdint.h \
- C:/msys64/ucrt64/include/c++/15.1.0/limits \
- C:/msys64/ucrt64/include/c++/15.1.0/ctime \
- C:/msys64/ucrt64/include/c++/15.1.0/bits/parse_numbers.h \
- C:/msys64/ucrt64/include/c++/15.1.0/chrono \
- C:/Users/usuario/EDPROY~1/ED/include/Negocio/Juego.h \
- C:/Users/usuario/EDPROY~1/ED/include/Negocio/Tablero.h \
- C:/msys64/ucrt64/include/c++/15.1.0/vector \
- C:/msys64/ucrt64/include/c++/15.1.0/bits/stl_uninitialized.h \
- C:/msys64/ucrt64/include/c++/15.1.0/bits/stl_vector.h \
- C:/msys64/ucrt64/include/c++/15.1.0/bits/stl_bvector.h \
- C:/msys64/ucrt64/include/c++/15.1.0/bits/vector.tcc \
- C:/Users/usuario/EDPROY~1/ED/include/Negocio/Jugador.h \
- C:/Users/usuario/EDPROY~1/ED/include/Negocio/JugadorHumano.h \
- C:/Users/usuario/EDPROY~1/ED/include/Negocio/JugadorMaquina.h \
- C:/Users/usuario/EDPROY~1/ED/include/Negocio/GestorMemoria.h \
- C:/Users/usuario/EDPROY~1/ED/include/Negocio/Juego.h \
- C:/Users/usuario/EDPROY~1/ED/include/Presentacion/Menus.h \
- C:/Users/usuario/EDPROY~1/ED/include/Presentacion/Interaccion.h \
- C:/Users/usuario/EDPROY~1/ED/include/Negocio/Jugador.h
+ C:/msys64/ucrt64/include/c++/15.1.0/bits/istream.tcc

@@ -1,4 +1,4 @@
-#include "Datos/GestorArchivos.h"
+/*#include "Datos/GestorArchivos.h"
 #include <fstream>
 #include <filesystem>
 #include <string>
@@ -163,7 +163,7 @@ bool GestorArchivos::cargarJuego(Juego& juego, const std::string& nombreArchivo)
     archivo.close();
     return true;
 }
-
+*/
 
 
 

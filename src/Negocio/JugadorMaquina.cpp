@@ -2,7 +2,6 @@
 #include "Negocio/Jugador.h"
 #include <iostream>
 #include <string>
-using namespace std;
 
 
 // ---------------------------------------------------------

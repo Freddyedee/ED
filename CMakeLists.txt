@@ -80,6 +80,9 @@ set(FILES_TO_CHECK
     # MÓDULO: Negocio
     # ========================
 
+    "src/Presentacion/Menus.cpp"
+    "src/Presentacion/Interaccion.cpp"
+    "src/Negocio/GestorMemoria.cpp"
     "src/Negocio/Tablero.cpp"
     "src/Negocio/Jugador.cpp"
     "src/Negocio/JugadorHumano.cpp"

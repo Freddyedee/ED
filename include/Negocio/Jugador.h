@@ -13,6 +13,9 @@
 class Jugador {
 
 private:
+    
+
+public:
     std::string nombre; 
     // Nombre del jugador. Se usa para mostrar mensajes,
     // identificar a quién le toca el turno y guardar partidas.
@@ -22,13 +25,12 @@ private:
     // Esta letra será colocada en el tablero por ese jugador.
 
 
-public:
-
     // -----------------------------------------------------------
     // Constructor del jugador.
     // Recibe un nombre y una ficha con la que jugará.
     // -----------------------------------------------------------
     Jugador(const std::string& nombre, char ficha);
+
 
     // Destructor virtual para permitir herencia correcta.
     // Obliga a que las clases derivadas destruyan recursos de manera segura.

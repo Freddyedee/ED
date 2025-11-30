@@ -52,12 +52,21 @@ public:
     // Modalidad 2 (conteo de secuencias)
     // =========================
 
+
+    bool hay3EnLinea(char ficha) const;  // Si quieres una versión más avanzada
+    bool esPosicionSegura(int col, char ficha);
+    bool columnaLlena(int col) const;
+    bool esPosicionSegura(int columna, char fichaJugador) const;
+
 private:
     // Contadores privados por dirección
     int contarHorizontales(char ficha) const;
     int contarVerticales(char ficha) const;
     int contarDiagonalesPositivas(char ficha) const;
     int contarDiagonalesNegativas(char ficha) const;
+    bool hay3Horizontal(char ficha)const;
+    bool hay3Vertical(char ficha)const;
+    bool hay3Diagonal(char ficha)const;
 };
 
 #endif // TABLERO_H

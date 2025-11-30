@@ -55,7 +55,8 @@ public:
     // Inicializa el tablero y asigna jugadorActual al jugador1.
     // -----------------------------------------------------------
     Juego(Jugador* jugador1, Jugador* jugador2, int modalidad);
-
+    // Constructor de copia
+    Juego(const Juego& otro);
 
     // --- CONTROL DE FLUJO DEL JUEGO ---
 
