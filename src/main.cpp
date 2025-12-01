@@ -11,7 +11,11 @@
 int main() {
 
     int opcion = 0;
+    int tipo;
+    int modalidad;
     Juego* juego = nullptr;
+    Jugador* j1 = nullptr;
+    Jugador* j2 = nullptr;
 
     while (opcion != 3) {
 
@@ -23,16 +27,20 @@ int main() {
         // ===========================
         if (opcion == 1) {
 
-            mostrarMenuTipoPartida();
-            int tipo;
-            std::cin >> tipo;
+            do
+            {
+                mostrarMenuTipoPartida();
+                std::cin >> tipo;
+                configurarJugadores(tipo, j1, j2);
 
-            Jugador* j1 = nullptr;
-            Jugador* j2 = nullptr;
-            configurarJugadores(tipo, j1, j2);
-
-            int modalidad = pedirModalidad();
-
+            } while (tipo > 3 || tipo < 0);
+            
+           
+            do
+            {
+                modalidad = pedirModalidad();
+            } while (modalidad < 0 || modalidad > 2);
+            
             juego = new Juego(j1, j2, modalidad);
 
             std::cout << "\nJuego iniciado correctamente.\n";

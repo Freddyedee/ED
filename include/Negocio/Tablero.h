@@ -9,7 +9,6 @@ private:
     int filas;  // Número de filas del tablero
     int columnas; // Número de columnas del tablero
     std::vector<std::vector<char>> matriz; // Matriz que contiene las fichas (' ' vacío, 'X', 'O', etc.)
-
 public:
     // =========================
     // Constructor
@@ -19,7 +18,6 @@ public:
     // =========================
     // Métodos básicos
     // =========================
-
     // Imprime el tablero por consola
     void imprimirTablero() const;
 
@@ -47,13 +45,10 @@ public:
     bool hay4EnLinea(char ficha) const;
     // Devuelve el total de secuencias de 4 del jugador en cualquier dirección
      int contarSecuencias(char ficha) const;
-
     // =========================
     // Modalidad 2 (conteo de secuencias)
     // =========================
-
-
-    bool hay3EnLinea(char ficha) const;  // Si quieres una versión más avanzada
+    bool hay3EnLinea(char ficha) const; 
     bool esPosicionSegura(int col, char ficha);
     bool columnaLlena(int col) const;
     bool esPosicionSegura(int columna, char fichaJugador) const;

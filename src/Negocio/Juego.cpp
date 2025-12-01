@@ -205,7 +205,7 @@ void Juego::setModalidad(int nueva) { modalidad = nueva; }
 ==========================================================
 
 Estas funciones están aquí para cumplir estructura,
-pero la lógica real de guardado/carga se hace en GestorArchivos.
+pero la lógica real de guardado/carga se hace en GestorMemoria.
 */
 void Juego::cargarPartida(const std::string& nombreArchivo) {
     std::cout << "Cargar partida no implementado.\n";

@@ -59,7 +59,7 @@ void configurarJugadores(int tipoPartida, Jugador*& j1, Jugador*& j2) {
         break;
 
     default:
-        std::cout << "Opción inválida.\n";
+        std::cout << "Opcion invalida.\n";
         break;
     }
 }
@@ -157,38 +157,29 @@ void ejecutarMenuJuego(Juego* juego) {
 
         switch (opcion) {
 
-        case 1: { // Movimiento de jugador humano o IA
-            realizarTurno(juego);
-            break;
-        }
-
-        case 2: // Mostrar tablero
-            std::cout << "\n=== ESTADO DEL TABLERO ===\n";
-            juego->getTablero().imprimirTablero();
-            break;
-
-        case 3: { // Guardar en memoria
-            int slot;
-            gestorMemoria.listarSlots();
-            std::cout << "Ingrese slot para guardar (0-4): ";
-            std::cin >> slot;
-            gestorMemoria.guardarJuego(juego, slot);
-            break;
-        }
-
-        case 5: { // Cargar desde memoria
-            int slot;
-            gestorMemoria.listarSlots();
-            std::cout << "Ingrese slot a cargar (0-4): ";
-            std::cin >> slot;
-            Juego* juegoCargado = gestorMemoria.cargarJuego(slot);
-            if (juegoCargado != nullptr) {
-                juego = juegoCargado;
-                std::cout << "Partida cargada correctamente.\n";
-                juego->getTablero().imprimirTablero();
+            case 1: { // Movimiento de jugador humano o IA
+                realizarTurno(juego);
+                break;
             }
-            break;
-        }
+
+            case 2: // Mostrar tablero
+                std::cout << "\n=== ESTADO DEL TABLERO ===\n";
+                juego->getTablero().imprimirTablero();
+                break;
+
+            case 3: { // Guardar en memoria
+                int slot;
+                do
+                {
+                    gestorMemoria.listarSlots();
+                    std::cout << "Ingrese slot para guardar (0-4): ";
+                    std::cin >> slot;
+                } while (slot < 0 || slot > 4);
+                
+
+                gestorMemoria.guardarJuego(juego, slot);
+                break;
+            }
         }
     }
 }
