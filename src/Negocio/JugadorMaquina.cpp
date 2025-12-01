@@ -153,19 +153,19 @@ int JugadorMaquina::elegirColumna(Tablero& t) {
         return col;
     }
 
-    // 6. Última opción segura
+    // 3. Última opción segura
     if (rand() % 100 < 10) {
         return columnaAleatoriaValida(t);
     }
 
-    // 3. Crear línea de 3
+    // 4. Crear línea de 3
     col = crearLineaDe3(t);
     if (col != -1){
         cout << "crearLineaDe3 " << col; 
         return col;
     }
     
-    // 4. Tomar el centro
+    // 5. Tomar el centro
     col = tomarCentro(t);
     if (col != -1){
         cout << "tomarCentro " << col; 
