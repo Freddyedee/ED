@@ -91,7 +91,7 @@ void realizarTurno(Juego* juego) {
         }
 
         // Intentar movimiento
-        if (!juego->realizarMovimiento(columna)) {
+        if (!juego->realizarMovimiento(columna) && !juego->getTablero().estaLleno()) {
             std::cout << "Movimiento inválido.\n";
 
             // Si es IA y falla → reintenta automáticamente

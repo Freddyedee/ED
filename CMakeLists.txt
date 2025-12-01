@@ -88,7 +88,6 @@ set(FILES_TO_CHECK
     "src/Negocio/JugadorHumano.cpp"
     "src/Negocio/JugadorMaquina.cpp"
     "src/Negocio/Juego.cpp"
-    "src/Datos/GestorArchivos.cpp"
     # ========================
     # MÓDULO: Presentación
     # ========================

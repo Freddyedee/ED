@@ -19,6 +19,7 @@ using namespace std;
         int crearLineaDe3(Tablero& t);
         int tomarCentro(Tablero& t);
         int mejorColumnaSegura(Tablero& t);
+        int columnaAleatoriaValida(Tablero& t);
 
         bool jugadaPermiteGanarAlRival(Tablero& t, int col);
 

@@ -72,16 +72,6 @@ bool JugadorMaquina::jugadaPermiteGanarAlRival(Tablero& t, int col) {
     return false;
 }
 
-int JugadorMaquina::evitarAutoDerrota(Tablero& t) {
-    auto orden = ordenColumnas(t);
-
-    for (int col : orden) {
-        if (!t.columnaLlena(col) && !jugadaPermiteGanarAlRival(t, col))
-            return col;
-    }
-    return -1;
-}
-
 // ---------------------------------------------------------
 // 4. Crear línea de 3 (amenaza futura)
 // ---------------------------------------------------------
@@ -108,52 +98,85 @@ int JugadorMaquina::tomarCentro(Tablero& t) {
     return -1;
 }
 
+int JugadorMaquina::columnaAleatoriaValida(Tablero& t) {
+    std::vector<int> validas;
+
+    for (int col = 0; col < t.getColumnas(); col++) {
+        if (!t.columnaLlena(col)) {
+            validas.push_back(col);
+        }
+    }
+
+    if (validas.empty()) return -1;
+
+    int idx = rand() % validas.size();
+    return validas[idx];
+}
+
+
 // ---------------------------------------------------------
 // 6. Elegir columna más "segura"
 // ---------------------------------------------------------
 int JugadorMaquina::mejorColumnaSegura(Tablero& t) {
+
+
+    //  Si no toca aleatorio, sigue el comportamiento normal
     auto orden = ordenColumnas(t);
 
     for (int col : orden) {
         if (!t.columnaLlena(col) && !jugadaPermiteGanarAlRival(t, col))
             return col;
     }
-    return -1;
+
+    // Si no encontró jugada segura → random
+    return columnaAleatoriaValida(t);
 }
+
 
 // ---------------------------------------------------------
 // FUNCIÓN PRINCIPAL DE LA IA
 // ---------------------------------------------------------
 int JugadorMaquina::elegirColumna(Tablero& t) {
 
+    
     // 1. Intentar ganar
     int col = buscarJugadaGanadora(t);
-    if (col != -1) return col;
-
-
+    if (col != -1){
+        cout << "buscarJugadaGanadora " << col; 
+        return col;
+    }
+    
     // 2. Bloquear al enemigo
     col = bloquearEnemigo(t);
-    if (col != -1) return col;
-
-    // 3. Evitar dejar ganar al rival
-    col = evitarAutoDerrota(t);
-    if (col != -1) return col;
-
-    // 4. Crear línea de 3
-    col = crearLineaDe3(t);
-    if (col != -1) return col;
-
-    // 5. Tomar el centro
-    col = tomarCentro(t);
-    if (col != -1) return col;
+    if (col != -1){
+        cout << "bloquear enemigo " << col; 
+        return col;
+    }
 
     // 6. Última opción segura
-    col = mejorColumnaSegura(t);
-    if (col != -1) return col;
+    if (rand() % 100 < 10) {
+        return columnaAleatoriaValida(t);
+    }
 
+    // 3. Crear línea de 3
+    col = crearLineaDe3(t);
+    if (col != -1){
+        cout << "crearLineaDe3 " << col; 
+        return col;
+    }
+    
+    // 4. Tomar el centro
+    col = tomarCentro(t);
+    if (col != -1){
+        cout << "tomarCentro " << col; 
+        return col;
+    }
+    
+    
     // Si no queda nada seguro, jugar la primera disponible
     for (int c = 0; c < t.getColumnas(); c++)
-        if (!t.columnaLlena(c))
-            return c;
+    if (!t.columnaLlena(c))
+    return c;
+
     return 0; // En caso extremo
 }

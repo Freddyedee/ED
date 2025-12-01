@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "C:/Users/usuario/ED proyet1/ED/bin/4enRaya.exe"
-  "C:/Users/usuario/ED proyet1/ED/bin/4enRaya.exe.manifest"
-  "C:/Users/usuario/ED proyet1/ED/bin/4enRaya.pdb"
-  "CMakeFiles/4enRaya.dir/src/Datos/GestorArchivos.cpp.obj"
-  "CMakeFiles/4enRaya.dir/src/Datos/GestorArchivos.cpp.obj.d"
+  "C:/Users/USER/Desktop/ED/bin/4enRaya.exe"
+  "C:/Users/USER/Desktop/ED/bin/4enRaya.exe.manifest"
+  "C:/Users/USER/Desktop/ED/bin/4enRaya.pdb"
   "CMakeFiles/4enRaya.dir/src/Negocio/GestorMemoria.cpp.obj"
   "CMakeFiles/4enRaya.dir/src/Negocio/GestorMemoria.cpp.obj.d"
   "CMakeFiles/4enRaya.dir/src/Negocio/Juego.cpp.obj"
